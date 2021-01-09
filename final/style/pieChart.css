@@ -1,0 +1,81 @@
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.chart-title{
+  display: none;
+}
+.display-title{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 200px;
+  margin-bottom: 20px;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 99%;
+  margin-right: 10px;
+}
+.mark{
+  display: flex;
+  margin-left: 80px;
+  margin-bottom: 5px;
+}
+.pieContainer{
+  display: flex;
+  
+}
+.range1{
+  background-color: #eb3b5a;
+}
+.range2{
+  background-color: #fa8231;
+}
+.range3{
+  background-color: #f7b731;
+}
+.range4{
+  background-color: #20bf6b;
+}
+.range5{
+  background-color: #2d98da;
+}
+.range6{
+  background-color: #3867d6;
+}
+.range7{
+  background-color: #8854d0;
+}
+.range8{
+  background-color: #a5b1c2;
+}
+.range9{
+  background-color: #4b6584;
+}

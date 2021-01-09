@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>final project</title>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+	<script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+	<script src="https://combinatronics.com/VACLab/d3-tip/master/d3-tip.js"></script>
+	<script charset = "UTF-8" src="../utils/tooltips.js"></script>
+	<link rel="stylesheet" type="text/css" href="../style/pieChart.css" />
+  <link rel="stylesheet" type="text/css" href="../style/main.css" />
+
+</head>
+<body>
+	<p> Order: <select id = "order">
+		<option value = "boy">boy </option>
+		<option value= "girl">girl </option>
+	</select></p>
+	<p> sort: <select id="sort">
+		<option value = "total"> total </option>
+		<option value="boy"> boy_num </option>
+		<option value="girl"> girl_num </option>
+		<option value="ratio"> sex_ratio </option>
+		<option value="birth_ratio"> birth_ratio </option>
+	</select></p>
+	<p> year: <select id="year">
+		<option value = "106"> 106 </option>
+		<option value="107"> 107 </option>
+		<option value="108"> 108 </option>
+	</select></p>
+	<div id="chart">
+    <div class="mainChart"></div>
+    <div class="ageChart"></div>
+    <div class="lineChart"></div>
+    <div class="pieContainer">
+      <div class="chart-title">
+        <div class="mark">
+          <div class="range1 circle"></div>
+          15~19歲
+        </div>
+        <div class="mark">
+          <div class="range2 circle"></div>
+          20~24歲
+        </div>
+        <div class="mark">
+          <div class="range3 circle"></div>
+          25~29歲
+        </div>
+        <div class="mark">
+          <div class="range4 circle"></div>
+          30~34歲
+        </div>
+        <div class="mark">
+          <div class="range5 circle"></div>
+          35~39歲
+        </div>
+        <div class="mark">
+          <div class="range6 circle"></div>
+          40~44歲
+        </div>
+        <div class="mark">
+          <div class="range7 circle"></div>
+          45~49歲
+        </div>
+        <div class="mark">
+          <div class="range8 circle"></div>
+          50歲以上
+        </div>
+        <div class="mark">
+          <div class="range9 circle"></div>
+          未滿15歲
+        </div>
+      </div>
+      <div id="pieChart"></div>
+    </div>
+  </div>
+	
+	
+	<script charset = "UTF-8" src = "final.js"></script>
+	
+</body>
+</html>
